@@ -1,0 +1,25 @@
+<ion-tabs>
+
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="profile">
+      <ion-icon name="person"></ion-icon>
+      <ion-label>person</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="news">
+      <ion-icon name="newspaper"></ion-icon>
+      <ion-label>newspaper</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="settings">
+      <ion-icon name="settings"></ion-icon>
+      <ion-label>settings</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="notification">
+      <ion-icon name="notifications"></ion-icon>
+      <ion-label>notification name:{{users}}</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+  <router-outlet></router-outlet>
+</ion-tabs>

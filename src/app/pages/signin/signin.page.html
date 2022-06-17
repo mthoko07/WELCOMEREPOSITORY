@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>signin</ion-title>
+  </ion-toolbar>
+</ion-header>
+  
+  <ion-content class="center">
+    <h1 style="text-align: center;">LOGIN</h1>
+    <br/>
+    <div class="body" >
+    <div style="text-align: center;">
+     <img src="assets/images/mobileLogo.png" alt="">
+    </div>
+    <br/>
+     <div>
+       <ion-list>
+        <ion-item><ion-icon name="person"></ion-icon>
+          <ion-input type="text"  placeholder="name" id="name" [(ngModel)]="user.name" required="required"></ion-input>
+        </ion-item>
+
+          <ion-item><ion-icon name="person"></ion-icon>
+            <ion-input type="text"  placeholder="Username" id="username" [(ngModel)]="user.username" required="required"></ion-input>
+          </ion-item>
+  
+         <ion-item><ion-icon name="lock-closed"></ion-icon>
+          <ion-input type="text" placeholder="surname" id="surname" [(ngModel)]="user.surname" required="required"></ion-input>
+       </ion-item>
+
+       <ion-item><ion-icon name="lock-closed"></ion-icon>
+        <ion-input type="text" placeholder="email" id="email" [(ngModel)]="user.email" required="required"></ion-input>
+     </ion-item>
+ 
+
+       <ion-item><ion-icon name="lock-closed"></ion-icon>
+        <ion-input type="text" placeholder="contact" id="contact" [(ngModel)]="user.contact" required="required"></ion-input>
+     </ion-item>
+       </ion-list>
+
+   
+    <ion-item><ion-icon name="lock-closed"></ion-icon>
+      <ion-input type="password" placeholder="Password" id="password" [(ngModel)]="user.password" required="required"></ion-input>
+   </ion-item>
+
+   <ion-item><ion-icon name="lock-closed"></ion-icon>
+    <ion-input type="confirmpassword" placeholder="confirmpassword" id="confirmpassword" [(ngModel)]="user.confirmpassword" required="required"></ion-input>
+ </ion-item>
+
+
+     </div>
+     <br/> <br/>
+     <div class="btn-pos">
+  
+      <ion-button expand="block" fill="solid" size="medium" (click)="reg()" >register</ion-button>
+       
+       </div>
+       <div  style="text-align: left;font-weight: bolder;">
+       <span ><a href="login">back</a></span>
+      </div>
+  
+    </div>
+  
+  </ion-content>
+
